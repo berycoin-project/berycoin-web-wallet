@@ -10,7 +10,7 @@ switch (config.getNetwork()) {
     domain = 'https://explorer.berycoin.com'
     break
 }
-const apiPrefix = domain + '/insight-api'
+const apiPrefix = domain + '/berycoin-insight-api'
 
 const _get = async url => {
   return (await axios.get(apiPrefix + url)).data
